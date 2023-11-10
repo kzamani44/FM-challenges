@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -39,6 +39,11 @@
 				font-family: 'Outfit', sans-serif;
 				background-color: #d6e1f0;
 				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap:1rem;
+				min-height: 100vh;
 			}
 
 			.container {
@@ -49,9 +54,6 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				top:50%;
-				left:50%;
-				transform: translate(-50%,50%);
 				padding: 1rem;
 				border-radius: 1rem;
 				box-shadow: 0px 10px 10px hsl(212, 45%, 89%);
@@ -70,7 +72,7 @@
 				padding: 1.2rem 1rem;
 			}
 
-			.text h2 {
+			.text h1 {
 				font-size: 20px;
 				font-weight: 700;
 				color: hsl(218, 44%, 22%);
@@ -87,9 +89,6 @@
 					margin: 0 auto;
 					width:80%;
 					position: relative;
-					top:50%;
-					left:0;
-					transform: translate(0%,30%);
 					gap:1rem;
 				}
 				.text{
@@ -105,22 +104,21 @@
 		</style>
 	</head>
 	<body>
-		<main role="main">
-			<div class="container">
-				<img src="./images/image-qr-code.png" alt="" />
+			<main class="container">
+				<img src="./images/image-qr-code.png" alt="white QR-code image with blue background" />
 
 				<div class="text">
-					<h2 class="heading">
+					<h1 class="heading" >
 					Improve your front-end<br>
 					skills by building projects
-					</h2>
+					</h1>
 					<p>
 					Scan the QR code to visit Frontend Mentor to take your coding skills
 					to the next level
 					</p>
 				</div>
-			</div>
-		</main>
+			</main>
+	
 		<footer role="footer">
 			<div class="attribution">
 				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
